@@ -30,7 +30,7 @@
 ## 💻 Ссылка на видеозапись презентации проекта
 
       
- [Видео презентация на яндекс диске](https://disk.yandex.ru/i/jXcWkSGwYcwPAg)
+ https://drive.google.com/file/d/1WNgs9ZI_jUxQbmweF53HnNtHUc4XTEFS/view?usp=sharing
     
 
 ## 🛠️ Установка проекта 
