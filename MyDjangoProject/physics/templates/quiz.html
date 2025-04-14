@@ -1,0 +1,35 @@
+{% extends "master.html" %}
+
+{% block content %}
+    <div class="container-fluid p-3 bg-primary text-white text-center">
+        <h1>Удачи {{uname}}</h1>
+    </div>
+
+    {% comment %}
+    Для того чтобы открывалось в новой вкладке то пишем
+    <form action="result/" target="_blank" method="POST"></form>
+    {% endcomment %}
+    <form action="result/"  method="POST">
+<!--        {% csrf_token %}-->
+
+        {% for task in tasks %}
+        <div class="container bg-primary text-white p-2 mt-5">
+            <div class=" text-white text-center">
+                <h4> Раздел {{ task.section }}</h4>
+            </div>
+            <div class="input mt-3">
+                <div class='container p-2'>
+                    {{ task.task }}
+                </div>
+                <input type="text" id="{{ task.id }}" name="{{ task.id }}" class="form-control task-answer-input"
+                placeholder="Введите ответ">
+                {% comment %} <div id="{{uname}}" name="{{uname}}"></div> {% endcomment %}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class='container text-white p-5 text-center'>
+            <button type="submit" class="btn btn-primary">Начать проверку</button>
+        </div>
+    </form>
+{% endblock %}

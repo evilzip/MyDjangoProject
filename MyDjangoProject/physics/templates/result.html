@@ -1,0 +1,40 @@
+{% extends "master.html" %}
+
+{% load static %}
+{%block title %}
+  Результаты
+{% endblock %}
+
+{%block content%}
+<div class="container-fluid p-3 bg-primary text-white text-center">
+{% comment %}   <h1>Поздравляю {{uname}}</h1> {% endcomment %}
+{% if score > 5 and score <= 8 %}
+<h1>Поздравляю !!!</h1>
+{% elif score <= 5 and score >= 0  %}
+<h1>Попробуй еще раз !</h1>
+{% else %}
+<div class="container-fluid p-3 bg-primary text-white text-center">
+    Что-то пошло не так
+</div>
+{% endif %}
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-sm-15 text-center mt-5">
+      <h2>Ваш Балл {{score}}</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+<!--        <div class="col-sm-7">-->
+<!--            <img src="https://i.ytimg.com/vi/xocYqrssfdY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFAgZSgmMA8=&rs=AOn4CLDDLMHml15ThXSIA_UWmznGKGK02g" class="img-fluid" alt="Cinque Terre" >-->
+<!--        </div>-->
+        <div class="col-sm-15 text-center mt-5">
+            <a href="/" class="btn btn-primary">Закончить просмотр</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,39 @@
+{% extends "master.html" %}
+
+{% load static %}
+{%block title %}
+  Физика тест на ученого
+{% endblock %}
+
+{%block content%}
+<div class="container-fluid p-3 bg-primary text-white text-center">
+  <h1>Тест по физике</h1>
+  <p>Проверь свои силы</p>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-sm-7">
+    </div>
+    <div class="col-sm-7">
+      <h2>Пройди тест и узнай какой ты физик!</h2>
+      <p>Науки делятся на две группы – на физику и собирание марок. Эрнест Резерфорд</p>
+
+      <form action="quiz/"  method="POST">
+<!--        {% csrf_token %}-->
+        <div class="row was-validate">
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="uname" placeholder="Введите свое имя" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-primary">Начать проверку</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+{%endblock%}

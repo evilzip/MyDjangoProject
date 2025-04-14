@@ -1,0 +1,26 @@
+{% extends "master.html" %}
+
+
+{%block title %}
+  Что-то пошло не так
+{% endblock %}
+
+{%block content%}
+<div class="container-fluid p-3 bg-primary text-white text-center">
+    <h1>Ошибка 404</h1>
+</div>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-sm-15 text-center mt-5">
+      <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/9e2ea285355669.Y3JvcCwxMTMxLDg4NSw5MDIsNTc0.png"
+              alt='Enstein' width="600" height="500" >
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-15 text-center mt-5">
+    <a href="/" class="btn btn-primary">Вернуться на главную</a>
+</div>
+
+{% endblock %}

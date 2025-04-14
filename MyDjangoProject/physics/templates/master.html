@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="{% static 'physics/css/physics.css' %}">
+</head>
+
+<body>
+<div class="container-fluid  bg-secondary  text-white ">
+  <ul class="nav">
+    <div class="btn-group btn-group-lg">
+        <a href='/' type="button" class="btn btn-secondary">Home</a>
+        <a href='/quiz' class="btn btn-secondary">Quiz</a>
+      </div>
+    {% comment %} <li class="nav-item">
+      <a class="nav-link link-light" href="/">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-light" href="/quiz">Quiz</a>
+    </li> {% endcomment %}
+  </ul>
+</div>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
+
+
+
+<!--{% comment %}-->
+<!--<ul class="nav navtabs">-->
+<!--  <div class="container-fluid bg-secondary  text-white ">-->
+<!--    <li class="nav-item">-->
+<!--      <a class="nav-link link-light active" data-bs-toggle="tab" href="/">HOME</a>-->
+<!--    </li>-->
+<!--    <li class="nav-item">-->
+<!--      <a class="nav-link " data-bs-toggle="tab" href="/quiz">Quiz</a>-->
+<!--    </li>-->
+<!--  </div>-->
+<!-- </ul>-->
+<!--  {% block content %}-->
+<!--  {% endblock %}-->
+
+<!--</body>-->
+<!--</html> {% endcomment %}-->
+
+<!--{% comment %} {% load static %}-->
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<link rel="stylesheet" href="{% static 'master.css' %}">-->
+<!--<head>-->
+<!--  <title>{% block title %}{% endblock %}</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--{% block content %}-->
+<!--{% endblock %}-->
+
+<!--</body>-->
+<!--</html> {% endcomment %}-->
