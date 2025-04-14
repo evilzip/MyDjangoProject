@@ -40,7 +40,7 @@
 
 1) Клонировать репозиторий:
 
-        git clone https://github.com/Sheldd/Django-project.git
+        https://github.com/evilzip/MyDjangoProject.git
    
 2) Запустить веб приложение:
 
